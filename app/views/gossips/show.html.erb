@@ -1,0 +1,13 @@
+<h1>Ta contribution à ce monde </h1>
+
+<p> <%= @gossip.anonymous_author %></p>
+
+<p> <%= @gossip.content %></p>
+
+<p><a href="<%= edit_gossip_path %>" class="btn btn-primary">Lache ta haine</a></p>
+
+<p><a href="<%= @gossip %>" class="btn btn-danger" data-confirm="T'es vraiment sur(e)?" data-method="DELETE">Des remords? Efface</a></p>
+
+<p class="btn btn-danger"><%= link_to 'Delete Gossip (Felix style)', @gossip, method: :delete %></p>
+
+<p><a href="<%= gossips_path %>" class="btn btn-default">Retour pour de nouveaux ragots</a></p>
